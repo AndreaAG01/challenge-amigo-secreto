@@ -6,6 +6,7 @@
     --color-button-hover: #e55720;
     --color-text: #444444;
     --color-white: #FFFFFF;
+    --info: #b0cddb;
 }
 
 /* Estilos generales */
@@ -159,4 +160,73 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+/* Alert */
+.demo-preview {
+  position: fixed;
+  top: 2%;
+  right: 2%;
+  width: 25%;
+  max-width: 90%;
+  text-align: left;
+}
+
+/* Estilo base del alert */
+.alert {
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  color: #f1f0f0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Variación: alert info */
+.alert-info {
+  background-color: var(--info);
+  border-color: var(--info);
+}
+
+/* Botón de cierre */
+.alert .close {
+  background: none;
+  border: none;
+  color: #f1f1f0;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.alert .text{
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.alert .text span{
+    margin-top: 3%;
+}
+
+.alert button{
+    text-align: justify;
+    position: fixed;
+    top: 3%;
+    right: 3%;
+    padding: 1px 5px;
+    box-shadow: 1px 0 15px rgba(85, 85, 85, 0.3);
+}
+
+.alert .close:hover {
+  transform: scale(1.2);
+}
+
+.clear {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.in {
+  opacity: 1;
 }

@@ -15,7 +15,8 @@ function agregarAmigo() {
 
   //Validamos que el valor no sea nulo, ni vacío
   validarValorInput(amigo);
-}
+
+};
 
 //Se crea una función para validar si el campo es nulo, vacío o no esta definido
 function validarValorInput(amigo) {
@@ -30,8 +31,9 @@ function validarValorInput(amigo) {
     actualizarListaAmigos();
     //Limpiar el input
     limpiarInput();
-  }
-}
+  };
+  
+};
 
 // Función encargada de crear y mostrar la alerta
 function abrirAlerta(mensaje) {
@@ -60,8 +62,8 @@ function abrirAlerta(mensaje) {
     setTimeout(() => {
       alert.remove(); // Elimina la alerta
     }, 3000);
-  }
-}
+  };
+};
 
 //Función encargada de cerrar la alerta
 function cerrarAlerta() {
@@ -71,13 +73,14 @@ function cerrarAlerta() {
   setTimeout(() => {
     miAlerta.remove();
   }, 500);
-}
+
+};
 
 // Función encargada de limpiar el campo de texto
 function limpiarInput() {
   //Restablecemos el valor del objeto a vacío
   document.getElementById("amigo").value = "";
-}
+};
 
 //Función para actualizar lista de amigos
 function actualizarListaAmigos() {
@@ -93,5 +96,23 @@ function actualizarListaAmigos() {
     li.textContent = listaAmigos[i];
     //Agregar elementos a la lista
     lista.appendChild(li);
-  }
-}
+  };
+};
+
+//Función para obtener el amigo secreto
+function sortearAmigo(){
+    //Validamos que haya amigos disponibles
+    if(listaAmigos.length !== 0){
+        //Generar un índice aleatorio
+        let indiceAleatorio = Math.floor(Math.random()*listaAmigos.length)+1;
+        //Obtener el nombre sorteado
+        let amigoSecreto = listaAmigos[indiceAleatorio];
+        //Obtener la lista resultado
+        let resultado = document.getElementById('resultado');
+        //Se crea el objeto li y se le asigna el valor de amigoSecreto
+        let li = document.createElement("li");
+        li.textContent = amigoSecreto;
+        //Mostrar el resultado
+        resultado.appendChild(li);
+    }
+};

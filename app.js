@@ -102,7 +102,7 @@ function actualizarListaAmigos() {
 //Función para obtener el amigo secreto
 function sortearAmigo(){
     //Validamos que haya amigos disponibles
-    if(listaAmigos.length !== 0){
+    if(listaAmigos.length > 2){
         //Generar un índice aleatorio
         let indiceAleatorio = Math.floor(Math.random()*listaAmigos.length)+1;
         //Obtener el nombre sorteado
@@ -116,6 +116,6 @@ function sortearAmigo(){
         resultado.appendChild(li);
     } else{
         // Mostrar una alerta si la lista esta vacía
-        abrirAlerta('Por favor, agrega amigos para el sorteo.');
+        abrirAlerta('Por favor, agrega mínimo dos amigos para el sorteo.');
     };
 };

@@ -23,26 +23,30 @@
 ---
 
 ## 📖 Descripción del Proyecto
-El juego Amigo Secreto es un desarrollo muy sencillo :
-- Registrar amigos en una lista.  
-- Seleccionar aleatoriamente un amigo secreto.  
-- Mostrar los resultados de forma clara e interactiva.  
+El Juego Amigo Secreto es una aplicación web sencilla y divertida, creada con HTML, CSS y JavaScript, que permite practicar conceptos básicos de desarrollo frontend.
 
-El objetivo es practicar conceptos de **HTML, CSS y JavaScript** aplicados en un reto sencillo y divertido.  
+El funcionamiento es muy simple:
+
+Los usuarios pueden ir añadiendo nombres de amigos a una lista.
+
+La lista se va mostrando en pantalla a medida que se agregan los nombres.
+
+Solo se permiten nombres válidos (sin números).
+
+Una vez creada la lista, se puede realizar un sorteo aleatorio para seleccionar a un “Amigo Secreto”, que se mostrará debajo de la lista.
+
+Este proyecto tiene como objetivo reforzar habilidades en el manejo del DOM, validaciones, eventos y estilos, aplicados en un reto entretenido y fácil de implementar.
 
 ---
 
 ## 🚀 Estado del proyecto
 ✅ Proyecto funcional  
-📌 Futuras mejoras: 
-- Se pueden realizar mejoras en diseño visual del proyecto. 
-- Se pueden mejorar las validaciones de los datos. 
+📌 Futuras mejoras
 
 ---
 
 ## 🎥 Demostración de funciones y aplicaciones
-![Demo](assets/demo.gif)  
-*Ejemplo del flujo: ingresar amigos → sortear → mostrar resultados.*  
+![Funcionalidad](assets/Funcionalidad.mp4)
 
 ---
 
@@ -65,6 +69,7 @@ JavaScript (Vanilla JS) → lógica de negocio y manipulación del DOM.
 ## 🙌 Personas Contribuyentes
 
 Andrea AG (documentación y modificación del proyecto).
+
 Alura Latam (Proyecto base).
 
 ---
@@ -73,6 +78,7 @@ Alura Latam (Proyecto base).
 ## 👩‍💻 Personas Desarrolladoras del Proyecto
 
 Andrea AG
+
 
 
 

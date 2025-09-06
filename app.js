@@ -5,6 +5,7 @@
 let listaAmigos = [];
 //Creo una variable para almacenar el objeto alerta
 let miAlerta = document.getElementById("myAlert");
+const regex = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
 
 //Se crea una función que se encargue de añadir los amigos a la variable listaAmigos
 function agregarAmigo() {
@@ -20,16 +21,22 @@ function agregarAmigo() {
 
 //Se crea una función para validar si el campo es nulo, vacío o no esta definido
 function validarValorInput(amigo) {
-    //
-    if (amigo.trim() === "" || amigo === null){
+    //Validamos que el campo no este vacio
+    if (!regex.test(amigo.trim())){
+        //Mostrar el alert
         abrirAlerta('Por favor, inserte un nombre.');
     }else{
-
+        //Insertar el nombre en la lista
+        listaAmigos.push(amigo.trim());
+        //Limpiar el input
+        limpiarInput();
     }
 }
 
 // Función encargada de crear y mostrar la alerta
 function abrirAlerta(mensaje) {
+
+    //Validar si el alert no existe
     if (!miAlerta) {
         // Crear div contenedor del alert
         const alert = document.createElement("div");
@@ -66,4 +73,10 @@ function cerrarAlerta() {
     setTimeout(() => {
       miAlerta.remove(); 
     }, 500);
+}
+
+// Función encargada de limpiar el campo de texto
+function limpiarInput(){
+    //Restablecemos el valor del objeto a vacío
+    document.getElementById("amigo").value = "";
 }

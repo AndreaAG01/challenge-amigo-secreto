@@ -101,8 +101,9 @@ function actualizarListaAmigos() {
 
 //Función para obtener el amigo secreto
 function sortearAmigo(){
+  
     //Validamos que haya amigos disponibles
-    if(listaAmigos.length > 2){
+    if(listaAmigos.length >= 2){
         //Generar un índice aleatorio
         let indiceAleatorio = Math.floor(Math.random()*listaAmigos.length)+1;
         //Obtener el nombre sorteado

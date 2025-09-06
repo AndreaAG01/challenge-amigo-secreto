@@ -101,15 +101,17 @@ function actualizarListaAmigos() {
 
 //Función para obtener el amigo secreto
 function sortearAmigo(){
-  
+    //Obtener la lista resultado
+    let resultado = document.getElementById('resultado');
+    //Limpiamos la lista del sorteo
+    resultado.innerHTML = "";
     //Validamos que haya amigos disponibles
     if(listaAmigos.length >= 2){
         //Generar un índice aleatorio
-        let indiceAleatorio = Math.floor(Math.random()*listaAmigos.length)+1;
+        let indiceAleatorio = Math.floor(Math.random()*listaAmigos.length);
         //Obtener el nombre sorteado
         let amigoSecreto = listaAmigos[indiceAleatorio];
-        //Obtener la lista resultado
-        let resultado = document.getElementById('resultado');
+        
         //Se crea el objeto li y se le asigna el valor de amigoSecreto
         let li = document.createElement("li");
         li.textContent = amigoSecreto;

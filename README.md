@@ -46,6 +46,7 @@ Este proyecto tiene como objetivo reforzar habilidades en el manejo del DOM, val
 ---
 
 ## 🎥 Demostración de funciones y aplicaciones
+Te dejo un ejemplo de como funcional el juego y cuáles son sus validaciones:
 ![Funcionalidad](assets/Funcionalidad.mp4)
 
 ---
@@ -78,6 +79,7 @@ Alura Latam (Proyecto base).
 ## 👩‍💻 Personas Desarrolladoras del Proyecto
 
 Andrea AG
+
 
 
 

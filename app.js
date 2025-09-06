@@ -114,5 +114,8 @@ function sortearAmigo(){
         li.textContent = amigoSecreto;
         //Mostrar el resultado
         resultado.appendChild(li);
-    }
+    } else{
+        // Mostrar una alerta si la lista esta vacía
+        abrirAlerta('Por favor, agrega amigos para el sorteo.');
+    };
 };

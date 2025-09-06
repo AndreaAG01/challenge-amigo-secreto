@@ -47,12 +47,15 @@ Este proyecto tiene como objetivo reforzar habilidades en el manejo del DOM, val
 
 ## 🎥 Demostración de funciones y aplicaciones
 Te dejo un ejemplo de como funcional el juego y cuáles son sus validaciones:
+
 ![Funcionalidad](assets/Funcionalidad.mp4)
 
 ---
 
 ## 🔑 Acceso al Proyecto
-Clona el repositorio desde GitHub:
+Adjunto el enlace del deploy de mi proyecto:
+
+https://andreaag01.github.io/challenge-amigo-secreto/
 
 ---
 
@@ -79,6 +82,7 @@ Alura Latam (Proyecto base).
 ## 👩‍💻 Personas Desarrolladoras del Proyecto
 
 Andrea AG
+
 
 
 
